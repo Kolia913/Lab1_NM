@@ -16,7 +16,7 @@ public class Main {
 
 		DichotomyMethod dm = DichotomyMethod.createDichotomyMethod(leftBorder, rightBorder, epsilon);
 		if(dm != null){
-			System.out.println("Result: " + dm.solve());
+			System.out.println("Result for dichotomy method: " + dm.solve());
 			System.out.println("Iterations: " + dm.getIterations());
 		}
 
@@ -25,9 +25,10 @@ public class Main {
 		ChordMethod chm = ChordMethod.createChordMethod(leftBorder, rightBorder, epsilon);
 
 		if(chm != null) {
-			System.out.println("Result: " + chm.solve());
+			System.out.println("Result chord method: " + chm.solve());
 			System.out.println("Iterations: " + chm.getIterations());
 		}
+		scanner.close();
 	}
 }
 
